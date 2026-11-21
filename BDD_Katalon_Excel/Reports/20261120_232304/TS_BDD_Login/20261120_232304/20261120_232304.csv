@@ -1,0 +1,6 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_BDD_Login,Chrome 157.0.8103.79,,,20-11-2026 23:23:54,20-11-2026 23:33:23,9m - 28.713s,PASSED
+,,,,,,,
+Test Cases/TC_BDD_Login,Chrome 157.0.8103.79,,,20-11-2026 23:30:18,20-11-2026 23:33:23,3m - 5.340s,PASSED
+"GLUE = [""""]",Chrome 157.0.8103.79,,,20-11-2026 23:30:18,20-11-2026 23:30:18,0.001s,PASSED
+"runFeatureFile(""Include/features/Login.feature"")",Chrome 157.0.8103.79,,,20-11-2026 23:30:18,20-11-2026 23:33:23,3m - 5.327s,PASSED

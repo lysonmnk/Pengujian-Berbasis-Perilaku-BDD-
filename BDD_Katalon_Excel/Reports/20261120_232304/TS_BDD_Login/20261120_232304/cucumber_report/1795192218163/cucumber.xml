@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="185.299" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-20T16:30:18.175088300Z">
+<testcase classname="Login pada aplikasi CURA Healthcare Service" name="Memeriksa login dengan berbagai kombinasi kredensial - #1.1" time="67.834">
+<system-out><![CDATA[
+Given I open the CURA application...........................................passed
+When I open the login form..................................................passed
+And I enter username "John Doe" and password "ThisIsNotAPassword"...........passed
+And I submit login..........................................................passed
+Then the login result should be "SUCCESS"...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login pada aplikasi CURA Healthcare Service" name="Memeriksa login dengan berbagai kombinasi kredensial - #1.2" time="58.242">
+<system-out><![CDATA[
+Given I open the CURA application...........................................passed
+When I open the login form..................................................passed
+And I enter username "Jane Doe" and password "ThisIsNotAPassword"...........passed
+And I submit login..........................................................passed
+Then the login result should be "FAILURE"...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login pada aplikasi CURA Healthcare Service" name="Memeriksa login dengan berbagai kombinasi kredensial - #1.3" time="58.984">
+<system-out><![CDATA[
+Given I open the CURA application...........................................passed
+When I open the login form..................................................passed
+And I enter username "John Doe" and password "WrongPassword123".............passed
+And I submit login..........................................................passed
+Then the login result should be "FAILURE"...................................passed
+]]></system-out>
+</testcase>
+</testsuite>

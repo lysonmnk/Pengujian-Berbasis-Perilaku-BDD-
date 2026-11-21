@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_BDD_Login</name>
+   <tag></tag>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>createdByName</key>
+            <value>Lysonmanik</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByName</key>
+            <value>Lysonmanik</value>
+         </entry>
+         <entry>
+            <key>createdByUuid</key>
+            <value>f91dab0e-aa09-4c85-b30c-1bc1a9ecfa5a</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByUuid</key>
+            <value>f91dab0e-aa09-4c85-b30c-1bc1a9ecfa5a</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c13380e3-7d9a-49e6-915f-aae1ff672066</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,17 @@
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Katalon temporary files
+BDD_Katalon_Excel/.gradle/
+BDD_Katalon_Excel/bin/
+BDD_Katalon_Excel/Libs/
+BDD_Katalon_Excel/output/
+!BDD_Katalon_Excel/output/.gitkeep
+BDD_Katalon_Excel/build/
+BDD_Katalon_Excel/.classpath
+BDD_Katalon_Excel/.project
+BDD_Katalon_Excel/.cache/
+*.class
+*.tmp

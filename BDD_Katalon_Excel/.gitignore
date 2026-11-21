@@ -1,0 +1,11 @@
+# Katalon Studio ignore rules
+.gradle/
+bin/
+Libs/
+output/
+!output/.gitkeep
+build/
+.classpath
+.project
+.cache/
+*.class

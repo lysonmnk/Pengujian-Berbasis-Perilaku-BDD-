@@ -1,0 +1,629 @@
+[0.017s][warning][cds] Archived non-system classes are disabled because the java.system.class.loader property is specified (value = "groovy.lang.GroovyClassLoader"). To use archived non-system classes, this property must not be set
+2026-11-20 20:23:51.803 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\lyson\.katalon\packages\KS-11.7.0\configuration\org.eclipse.osgi\166\0\.cp\resources\logback\logback-execution.xml
+2026-11-20 20:23:51.810 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\lyson\Katalon Studio\BDD_Katalon_Excel\Include\config\log.properties
+2026-11-20 20:23:53.143 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS_BDD_Login
+2026-11-20 20:23:53.377 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Lysonmanik
+2026-11-20 20:23:53.378 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = BDD_Katalon_Excel
+2026-11-20 20:23:53.379 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = lyson - 172.25.41.177
+2026-11-20 20:23:53.380 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-11-20 20:23:53.381 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 172.25.41.177
+2026-11-20 20:23:53.383 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.7.0
+2026-11-20 20:23:53.693 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-11-20 20:23:53.694 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC_BDD_Login
+2026-11-20 20:23:54.204 DEBUG testcase.TC_BDD_Login                    - 1: GLUE = [""]
+2026-11-20 20:23:54.256 DEBUG testcase.TC_BDD_Login                    - 2: runFeatureFile("Include/features/Login.feature")
+2026-11-20 20:23:54.391 INFO  c.k.k.c.c.k.CucumberBuiltinKeywords      - Starting run keyword runFeatureFile: 'Include/features/Login.feature' and extract report to folder: 'C:\Users\lyson\Katalon Studio\BDD_Katalon_Excel\Reports\20261120_202346\TS_BDD_Login\20261120_202346/cucumber_report/1795181034365'...
+2026-11-20 20:23:55.097 ERROR i.c.core.resource.ClasspathScanner       - Cucumber skipped groovy.LoginSteps because it could not be loaded; any step it defines will be reported as undefined
+java.lang.NoClassDefFoundError: groovy/LoginSteps (wrong name: LoginSteps)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:580)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:148)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at io.cucumber.core.resource.ClasspathScanner.safelyLoadClass(ClasspathScanner.java:103)
+	at io.cucumber.core.resource.ClasspathScanner.lambda$8(ClasspathScanner.java:97)
+	at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:82)
+	at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:67)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2799)
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:61)
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:54)
+	at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:34)
+	at io.cucumber.core.resource.ClasspathScanner.findClassesForUri(ClasspathScanner.java:75)
+	at io.cucumber.core.resource.ClasspathScanner.lambda$3(ClasspathScanner.java:67)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at io.cucumber.core.resource.ClasspathScanner.findClassesForUris(ClasspathScanner.java:70)
+	at io.cucumber.core.resource.ClasspathScanner.scanForClassesInPackage(ClasspathScanner.java:54)
+	at io.cucumber.core.resource.ClasspathScanner.scanForClassesInPackage(ClasspathScanner.java:115)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:41)
+	at io.cucumber.core.runner.Runner.<init>(Runner.java:57)
+	at io.cucumber.core.runtime.SingletonRunnerSupplier.createRunner(SingletonRunnerSupplier.java:44)
+	at io.cucumber.core.runtime.SingletonRunnerSupplier.get(SingletonRunnerSupplier.java:35)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:35)
+	at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:140)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runBeforeAllHooks(CucumberExecutionContext.java:92)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:146)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:79)
+	at io.cucumber.core.cli.Main.run(Main.java:87)
+	at io.cucumber.core.cli.Main$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.executeCucumberCLI(CucumberBuiltinKeywords.groovy:159)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.executeCucumber(CucumberBuiltinKeywords.groovy:146)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:362)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure3.doCall(CucumberBuiltinKeywords.groovy:318)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure3.doCall(CucumberBuiltinKeywords.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:316)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:249)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:263)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:353)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)
+	at Script1795166661698.run(Script1795166661698.groovy:4)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)
+	at S1120_1.run(S1120_1.groovy:41)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:254)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:360)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:349)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:652)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:398)
+	at groovy.ui.GroovyMain.access$1400(GroovyMain.java:68)
+	at groovy.ui.GroovyMain$GroovyCommand.process(GroovyMain.java:322)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:142)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:115)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:117)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:39)
+2026-11-20 20:23:55.107 ERROR i.c.core.resource.ClasspathScanner       - Cucumber skipped lib.CustomKeywords because it could not be loaded; any step it defines will be reported as undefined
+java.lang.NoClassDefFoundError: lib/CustomKeywords (wrong name: CustomKeywords)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:580)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:148)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at io.cucumber.core.resource.ClasspathScanner.safelyLoadClass(ClasspathScanner.java:103)
+	at io.cucumber.core.resource.ClasspathScanner.lambda$8(ClasspathScanner.java:97)
+	at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:82)
+	at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:67)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2799)
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:61)
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:54)
+	at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:34)
+	at io.cucumber.core.resource.ClasspathScanner.findClassesForUri(ClasspathScanner.java:75)
+	at io.cucumber.core.resource.ClasspathScanner.lambda$3(ClasspathScanner.java:67)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at io.cucumber.core.resource.ClasspathScanner.findClassesForUris(ClasspathScanner.java:70)
+	at io.cucumber.core.resource.ClasspathScanner.scanForClassesInPackage(ClasspathScanner.java:54)
+	at io.cucumber.core.resource.ClasspathScanner.scanForClassesInPackage(ClasspathScanner.java:115)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:41)
+	at io.cucumber.core.runner.Runner.<init>(Runner.java:57)
+	at io.cucumber.core.runtime.SingletonRunnerSupplier.createRunner(SingletonRunnerSupplier.java:44)
+	at io.cucumber.core.runtime.SingletonRunnerSupplier.get(SingletonRunnerSupplier.java:35)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:35)
+	at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:140)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runBeforeAllHooks(CucumberExecutionContext.java:92)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:146)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:79)
+	at io.cucumber.core.cli.Main.run(Main.java:87)
+	at io.cucumber.core.cli.Main$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.executeCucumberCLI(CucumberBuiltinKeywords.groovy:159)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.executeCucumber(CucumberBuiltinKeywords.groovy:146)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:362)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure3.doCall(CucumberBuiltinKeywords.groovy:318)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure3.doCall(CucumberBuiltinKeywords.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:316)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:249)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:263)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:353)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)
+	at Script1795166661698.run(Script1795166661698.groovy:4)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)
+	at S1120_1.run(S1120_1.groovy:41)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:254)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:360)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:349)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:652)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:398)
+	at groovy.ui.GroovyMain.access$1400(GroovyMain.java:68)
+	at groovy.ui.GroovyMain$GroovyCommand.process(GroovyMain.java:322)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:142)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:115)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:117)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:39)
+2026-11-20 20:23:55.111 ERROR i.c.core.resource.ClasspathScanner       - Cucumber skipped lib.internal.GlobalVariable because it could not be loaded; any step it defines will be reported as undefined
+java.lang.NoClassDefFoundError: lib/internal/GlobalVariable (wrong name: internal/GlobalVariable)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:580)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:148)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at io.cucumber.core.resource.ClasspathScanner.safelyLoadClass(ClasspathScanner.java:103)
+	at io.cucumber.core.resource.ClasspathScanner.lambda$8(ClasspathScanner.java:97)
+	at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:82)
+	at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:67)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2799)
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:61)
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:54)
+	at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:34)
+	at io.cucumber.core.resource.ClasspathScanner.findClassesForUri(ClasspathScanner.java:75)
+	at io.cucumber.core.resource.ClasspathScanner.lambda$3(ClasspathScanner.java:67)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at io.cucumber.core.resource.ClasspathScanner.findClassesForUris(ClasspathScanner.java:70)
+	at io.cucumber.core.resource.ClasspathScanner.scanForClassesInPackage(ClasspathScanner.java:54)
+	at io.cucumber.core.resource.ClasspathScanner.scanForClassesInPackage(ClasspathScanner.java:115)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:41)
+	at io.cucumber.core.runner.Runner.<init>(Runner.java:57)
+	at io.cucumber.core.runtime.SingletonRunnerSupplier.createRunner(SingletonRunnerSupplier.java:44)
+	at io.cucumber.core.runtime.SingletonRunnerSupplier.get(SingletonRunnerSupplier.java:35)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:35)
+	at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:140)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runBeforeAllHooks(CucumberExecutionContext.java:92)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:146)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:79)
+	at io.cucumber.core.cli.Main.run(Main.java:87)
+	at io.cucumber.core.cli.Main$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.executeCucumberCLI(CucumberBuiltinKeywords.groovy:159)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.executeCucumber(CucumberBuiltinKeywords.groovy:146)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:362)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure3.doCall(CucumberBuiltinKeywords.groovy:318)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure3.doCall(CucumberBuiltinKeywords.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:316)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:249)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:263)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:353)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)
+	at Script1795166661698.run(Script1795166661698.groovy:4)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)
+	at S1120_1.run(S1120_1.groovy:41)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:254)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:360)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:349)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:652)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:398)
+	at groovy.ui.GroovyMain.access$1400(GroovyMain.java:68)
+	at groovy.ui.GroovyMain$GroovyCommand.process(GroovyMain.java:322)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:142)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:115)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:117)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:39)
+2026-11-20 20:23:55.120 ERROR i.c.core.resource.ClasspathScanner       - Cucumber skipped lib.S1120_1 because it could not be loaded; any step it defines will be reported as undefined
+java.lang.NoClassDefFoundError: lib/S1120_1 (wrong name: S1120_1)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:580)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:148)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at io.cucumber.core.resource.ClasspathScanner.safelyLoadClass(ClasspathScanner.java:103)
+	at io.cucumber.core.resource.ClasspathScanner.lambda$8(ClasspathScanner.java:97)
+	at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:82)
+	at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:67)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2799)
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:61)
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:54)
+	at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:34)
+	at io.cucumber.core.resource.ClasspathScanner.findClassesForUri(ClasspathScanner.java:75)
+	at io.cucumber.core.resource.ClasspathScanner.lambda$3(ClasspathScanner.java:67)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at io.cucumber.core.resource.ClasspathScanner.findClassesForUris(ClasspathScanner.java:70)
+	at io.cucumber.core.resource.ClasspathScanner.scanForClassesInPackage(ClasspathScanner.java:54)
+	at io.cucumber.core.resource.ClasspathScanner.scanForClassesInPackage(ClasspathScanner.java:115)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:41)
+	at io.cucumber.core.runner.Runner.<init>(Runner.java:57)
+	at io.cucumber.core.runtime.SingletonRunnerSupplier.createRunner(SingletonRunnerSupplier.java:44)
+	at io.cucumber.core.runtime.SingletonRunnerSupplier.get(SingletonRunnerSupplier.java:35)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:35)
+	at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:140)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runBeforeAllHooks(CucumberExecutionContext.java:92)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:146)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:79)
+	at io.cucumber.core.cli.Main.run(Main.java:87)
+	at io.cucumber.core.cli.Main$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.executeCucumberCLI(CucumberBuiltinKeywords.groovy:159)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.executeCucumber(CucumberBuiltinKeywords.groovy:146)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:362)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure3.doCall(CucumberBuiltinKeywords.groovy:318)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure3.doCall(CucumberBuiltinKeywords.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:316)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:249)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:263)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:353)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)
+	at Script1795166661698.run(Script1795166661698.groovy:4)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)
+	at S1120_1.run(S1120_1.groovy:41)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:254)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:360)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:349)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:652)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:398)
+	at groovy.ui.GroovyMain.access$1400(GroovyMain.java:68)
+	at groovy.ui.GroovyMain$GroovyCommand.process(GroovyMain.java:322)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:142)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:115)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:117)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:39)
+2026-11-20 20:23:55.907 INFO  i.cucumber.core.plugin.CucumberReporter  - --------------------
+2026-11-20 20:23:55.908 INFO  i.cucumber.core.plugin.CucumberReporter  - START SCENARIO Memeriksa login dengan berbagai kombinasi kredensial
+2026-11-20 20:23:55.912 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP I open the CURA application
+2026-11-20 20:23:56.365 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-11-20 20:23:56.448 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-11-20 20:24:01.887 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = bb9114a0632429e68f37db8b2a2fb4e3
+2026-11-20 20:24:01.890 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 157.0.8103.79
+2026-11-20 20:24:01.892 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-11-20 20:24:01.894 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.46.0
+2026-11-20 20:24:01.902 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-11-20 20:24:06.651 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ I open the CURA application
+2026-11-20 20:24:06.661 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP I open the login form
+2026-11-20 20:24:07.647 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ I open the login form
+2026-11-20 20:24:07.650 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP I enter username "John Doe" and password "ThisIsNotAPassword"
+2026-11-20 20:24:17.797 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Recovering element locator by using AI Self-Healing...
+2026-11-20 20:24:25.600 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Found "1" possible locators:\n [\n  {\n    "type": "CSS",\n    "value": "#txt-username",\n    "semanticLocator": "Username input field",\n    "confidence": 1.0,\n    "reason": "Matched id\u003d\u0027txt-username\u0027 from the broken test object\u0027s attributes and the corresponding Username input in the page source."\n  }\n]
+2026-11-20 20:24:25.602 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Verifying locator: "#txt-username"
+2026-11-20 20:24:25.625 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Found valid locator: "#txt-username"
+2026-11-20 20:24:26.269 INFO  c.k.k.c.w.c.i.SelfHealingController      - [AI Self-Healing] Screenshot: C:/Users/lyson/Katalon Studio/BDD_Katalon_Excel/Reports/Self-healing/Object Repository/CURA/input_userName_XPATH.png
+2026-11-20 20:24:26.346 WARN  c.k.k.c.w.k.builtin.SetTextKeyword       - Waiting for element timed out
+2026-11-20 20:24:36.536 WARN  c.k.k.c.w.c.i.SelfHealingController      - [AI Self-Healing] The current locator of test object 'Object Repository/CURA/input_userName' was broken. Propose an alternative one: '//input[@id='txt-username']'.
+2026-11-20 20:24:36.581 WARN  c.k.k.c.w.k.builtin.SetTextKeyword       - Waiting for element timed out
+2026-11-20 20:24:46.789 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Recovering element locator by using AI Self-Healing...
+2026-11-20 20:24:48.130 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Found "1" possible locators:\n [\n  {\n    "type": "CSS",\n    "value": "#txt-password",\n    "semanticLocator": "Password input field",\n    "confidence": 1.0,\n    "reason": "Matched id\u003d\u0027txt-password\u0027 from the broken test object\u0027s attributes and the page source; the element is an enabled password input."\n  }\n]
+2026-11-20 20:24:48.132 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Verifying locator: "#txt-password"
+2026-11-20 20:24:48.158 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Found valid locator: "#txt-password"
+2026-11-20 20:24:48.460 INFO  c.k.k.c.w.c.i.SelfHealingController      - [AI Self-Healing] Screenshot: C:/Users/lyson/Katalon Studio/BDD_Katalon_Excel/Reports/Self-healing/Object Repository/CURA/input_password_XPATH.png
+2026-11-20 20:24:48.500 WARN  c.k.k.c.w.k.builtin.SetTextKeyword       - Waiting for element timed out
+2026-11-20 20:24:58.670 WARN  c.k.k.c.w.c.i.SelfHealingController      - [AI Self-Healing] The current locator of test object 'Object Repository/CURA/input_password' was broken. Propose an alternative one: '//input[@id='txt-password']'.
+2026-11-20 20:24:58.693 WARN  c.k.k.c.w.k.builtin.SetTextKeyword       - Waiting for element timed out
+2026-11-20 20:24:58.821 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ I enter username "John Doe" and password "ThisIsNotAPassword"
+2026-11-20 20:24:58.828 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP I submit login
+2026-11-20 20:25:08.868 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Recovering element locator by using AI Self-Healing...
+2026-11-20 20:25:11.606 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Found "1" possible locators:\n [\n  {\n    "type": "CSS",\n    "value": "#btn-login",\n    "semanticLocator": "Login form submit button",\n    "confidence": 1.0,\n    "reason": "Matched id\u003d\u0027btn-login\u0027 from the broken test object\u0027s attributes; the page contains one button with this id."\n  }\n]
+2026-11-20 20:25:11.608 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Verifying locator: "#btn-login"
+2026-11-20 20:25:11.635 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Found valid locator: "#btn-login"
+2026-11-20 20:25:11.984 INFO  c.k.k.c.w.c.i.SelfHealingController      - [AI Self-Healing] Screenshot: C:/Users/lyson/Katalon Studio/BDD_Katalon_Excel/Reports/Self-healing/Object Repository/CURA/button_Login_XPATH.png
+2026-11-20 20:25:12.028 WARN  c.k.k.c.w.keyword.builtin.ClickKeyword   - Waiting for element timed out
+2026-11-20 20:25:13.612 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ I submit login
+2026-11-20 20:25:13.618 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP the login result should be "SUCCESS"
+2026-11-20 20:25:14.278 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ the login result should be "SUCCESS"
+2026-11-20 20:25:14.286 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ SCENARIO Memeriksa login dengan berbagai kombinasi kredensial
+2026-11-20 20:25:14.291 INFO  i.cucumber.core.plugin.CucumberReporter  - END SCENARIO Memeriksa login dengan berbagai kombinasi kredensial
+2026-11-20 20:25:14.297 INFO  i.cucumber.core.plugin.CucumberReporter  - --------------------
+2026-11-20 20:25:14.298 INFO  i.cucumber.core.plugin.CucumberReporter  - START SCENARIO Memeriksa login dengan berbagai kombinasi kredensial
+2026-11-20 20:25:14.299 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP I open the CURA application
+2026-11-20 20:25:14.302 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-11-20 20:25:14.308 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-11-20 20:25:16.976 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 992a0d841c4eabff94121e3e3ea1703f
+2026-11-20 20:25:16.977 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 157.0.8103.79
+2026-11-20 20:25:16.978 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-11-20 20:25:16.979 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.46.0
+2026-11-20 20:25:16.981 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-11-20 20:25:20.076 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ I open the CURA application
+2026-11-20 20:25:20.083 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP I open the login form
+2026-11-20 20:25:20.873 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ I open the login form
+2026-11-20 20:25:20.880 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP I enter username "Jane Doe" and password "ThisIsNotAPassword"
+2026-11-20 20:25:30.964 WARN  c.k.k.c.w.c.i.SelfHealingController      - The current locator of test object 'Object Repository/CURA/input_userName' was broken. Propose an alternative one: '//input[@id='txt-username']'.
+2026-11-20 20:25:30.979 WARN  c.k.k.c.w.k.builtin.SetTextKeyword       - Waiting for element timed out
+2026-11-20 20:25:41.083 WARN  c.k.k.c.w.c.i.SelfHealingController      - The current locator of test object 'Object Repository/CURA/input_userName' was broken. Propose an alternative one: '//input[@id='txt-username']'.
+2026-11-20 20:25:41.106 WARN  c.k.k.c.w.k.builtin.SetTextKeyword       - Waiting for element timed out
+2026-11-20 20:25:51.315 WARN  c.k.k.c.w.c.i.SelfHealingController      - The current locator of test object 'Object Repository/CURA/input_password' was broken. Propose an alternative one: '//input[@id='txt-password']'.
+2026-11-20 20:25:51.338 WARN  c.k.k.c.w.k.builtin.SetTextKeyword       - Waiting for element timed out
+2026-11-20 20:26:01.441 WARN  c.k.k.c.w.c.i.SelfHealingController      - The current locator of test object 'Object Repository/CURA/input_password' was broken. Propose an alternative one: '//input[@id='txt-password']'.
+2026-11-20 20:26:01.466 WARN  c.k.k.c.w.k.builtin.SetTextKeyword       - Waiting for element timed out
+2026-11-20 20:26:01.607 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ I enter username "Jane Doe" and password "ThisIsNotAPassword"
+2026-11-20 20:26:01.613 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP I submit login
+2026-11-20 20:26:11.699 WARN  c.k.k.c.w.c.i.SelfHealingController      - The current locator of test object 'Object Repository/CURA/button_Login' was broken. Propose an alternative one: '//button[@id='btn-login']'.
+2026-11-20 20:26:11.723 WARN  c.k.k.c.w.keyword.builtin.ClickKeyword   - Waiting for element timed out
+2026-11-20 20:26:12.596 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ I submit login
+2026-11-20 20:26:12.601 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP the login result should be "FAILURE"
+2026-11-20 20:26:13.063 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ the login result should be "FAILURE"
+2026-11-20 20:26:13.066 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ SCENARIO Memeriksa login dengan berbagai kombinasi kredensial
+2026-11-20 20:26:13.068 INFO  i.cucumber.core.plugin.CucumberReporter  - END SCENARIO Memeriksa login dengan berbagai kombinasi kredensial
+2026-11-20 20:26:13.072 INFO  i.cucumber.core.plugin.CucumberReporter  - --------------------
+2026-11-20 20:26:13.073 INFO  i.cucumber.core.plugin.CucumberReporter  - START SCENARIO Memeriksa login dengan berbagai kombinasi kredensial
+2026-11-20 20:26:13.075 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP I open the CURA application
+2026-11-20 20:26:13.078 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-11-20 20:26:13.083 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-11-20 20:26:15.468 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 8ecfbd9d13a64f799d20118abbce4f73
+2026-11-20 20:26:15.469 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 157.0.8103.79
+2026-11-20 20:26:15.470 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-11-20 20:26:15.471 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.46.0
+2026-11-20 20:26:15.472 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-11-20 20:26:20.163 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ I open the CURA application
+2026-11-20 20:26:20.168 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP I open the login form
+2026-11-20 20:26:20.963 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ I open the login form
+2026-11-20 20:26:20.967 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP I enter username "John Doe" and password "WrongPassword123"
+2026-11-20 20:26:31.043 WARN  c.k.k.c.w.c.i.SelfHealingController      - The current locator of test object 'Object Repository/CURA/input_userName' was broken. Propose an alternative one: '//input[@id='txt-username']'.
+2026-11-20 20:26:31.066 WARN  c.k.k.c.w.k.builtin.SetTextKeyword       - Waiting for element timed out
+2026-11-20 20:26:41.186 WARN  c.k.k.c.w.c.i.SelfHealingController      - The current locator of test object 'Object Repository/CURA/input_userName' was broken. Propose an alternative one: '//input[@id='txt-username']'.
+2026-11-20 20:26:41.207 WARN  c.k.k.c.w.k.builtin.SetTextKeyword       - Waiting for element timed out
+2026-11-20 20:26:51.413 WARN  c.k.k.c.w.c.i.SelfHealingController      - The current locator of test object 'Object Repository/CURA/input_password' was broken. Propose an alternative one: '//input[@id='txt-password']'.
+2026-11-20 20:26:51.436 WARN  c.k.k.c.w.k.builtin.SetTextKeyword       - Waiting for element timed out
+2026-11-20 20:27:01.552 WARN  c.k.k.c.w.c.i.SelfHealingController      - The current locator of test object 'Object Repository/CURA/input_password' was broken. Propose an alternative one: '//input[@id='txt-password']'.
+2026-11-20 20:27:01.573 WARN  c.k.k.c.w.k.builtin.SetTextKeyword       - Waiting for element timed out
+2026-11-20 20:27:01.707 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ I enter username "John Doe" and password "WrongPassword123"
+2026-11-20 20:27:01.714 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP I submit login
+2026-11-20 20:27:11.783 WARN  c.k.k.c.w.c.i.SelfHealingController      - The current locator of test object 'Object Repository/CURA/button_Login' was broken. Propose an alternative one: '//button[@id='btn-login']'.
+2026-11-20 20:27:11.805 WARN  c.k.k.c.w.keyword.builtin.ClickKeyword   - Waiting for element timed out
+2026-11-20 20:27:12.731 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ I submit login
+2026-11-20 20:27:12.733 DEBUG i.cucumber.core.plugin.CucumberReporter  - STEP the login result should be "FAILURE"
+2026-11-20 20:27:13.060 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ the login result should be "FAILURE"
+2026-11-20 20:27:13.062 DEBUG i.cucumber.core.plugin.CucumberReporter  - ✓ SCENARIO Memeriksa login dengan berbagai kombinasi kredensial
+2026-11-20 20:27:13.064 INFO  i.cucumber.core.plugin.CucumberReporter  - END SCENARIO Memeriksa login dengan berbagai kombinasi kredensial
+
+3 scenarios ([32m3 passed[39m)
+15 steps ([32m15 passed[39m)
+3m 18.45s
+2026-11-20 20:27:13.181 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC_BDD_Login
+2026-11-20 20:27:13.182 INFO  c.k.katalon.core.main.TestCaseExecutor   - 
+2026-11-20 20:27:13.183 INFO  c.k.katalon.core.main.TestCaseExecutor   - ===================== Self-healing Report ====================
+2026-11-20 20:27:13.183 INFO  c.k.katalon.core.main.TestCaseExecutor   - One of the failed test object locators has been recovered by Self-healing. Please refer to the Self-healing Insights tab for more details.
+2026-11-20 20:27:13.183 INFO  c.k.katalon.core.main.TestCaseExecutor   - To learn more about Self-healing, please read https://docs.katalon.com/katalon-studio/maintain-tests/self-healing-tests-in-katalon-studio
+2026-11-20 20:27:13.184 INFO  c.k.katalon.core.main.TestCaseExecutor   - ==============================================================
+2026-11-20 20:27:13.241 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-11-20 20:27:13.241 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS_BDD_Login
+2026-11-20 20:27:13.241 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

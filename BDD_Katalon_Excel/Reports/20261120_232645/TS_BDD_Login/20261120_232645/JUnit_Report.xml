@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_BDD_Login" time="189.099" tests="1" passed="1" failures="0" errors="0" incompleted="0" skipped="0">
+   <testsuite name="TS_BDD_Login" tests="1" passed="1" failures="0" errors="0" incompleted="0" skipped="0" time="189.099" timestamp="2026-11-20T16:26:49.793Z" hostname="lyson - lyson_manik" id="Test Suites/TS_BDD_Login" status="PASSED">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\lyson\\Katalon Studio\\BDD_Katalon_Excel\\Reports\\20261120_232645\\TS_BDD_Login\\20261120_232645"/>
+         <property name="logFiles" value="C:\\Users\\lyson\\Katalon Studio\\BDD_Katalon_Excel\\Reports\\20261120_232645\\TS_BDD_Login\\20261120_232645\\console0.log, C:\\Users\\lyson\\Katalon Studio\\BDD_Katalon_Excel\\Reports\\20261120_232645\\TS_BDD_Login\\20261120_232645\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="executionBindingVariables" value="[]"/>
+         <property name="hostName" value="lyson - lyson_manik"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="11.7.0"/>
+         <property name="browser" value="Chrome 157.0.8103.79"/>
+         <property name="userFullName" value="Lysonmanik"/>
+         <property name="hostAddress" value="10.214.145.29"/>
+         <property name="sessionId" value="0f15ad055f12bbf390f4a27f388fc5f5"/>
+         <property name="projectName" value="BDD_Katalon_Excel"/>
+         <property name="seleniumVersion" value="4.46.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/TC_BDD_Login" time="188.773" classname="Test Cases/TC_BDD_Login" status="PASSED">
+         <system-out><![CDATA[20-11-2026T23:26:50 - [TEST_CASE][PASSED] - Test Cases/TC_BDD_Login: Test Cases/TC_BDD_Login
+
+20-11-2026T23:26:50 - [TEST_STEP][PASSED] - GLUE = [""]: null
+
+20-11-2026T23:26:50 - [TEST_STEP][PASSED] - runFeatureFile("Include/features/Login.feature"): Feature file: 'Include/features/Login.feature' was passed
+
+20-11-2026T23:26:50 - [MESSAGE][INFO] - Starting run keyword runFeatureFile: 'Include/features/Login.feature' and extract report to folder: 'C:\Users\lyson\Katalon Studio\BDD_Katalon_Excel\Reports\20261120_232645\TS_BDD_Login\20261120_232645/cucumber_report/1795192010731'...
+
+20-11-2026T23:26:51 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Memeriksa login dengan berbagai kombinasi kredensial: SCENARIO Memeriksa login dengan berbagai kombinasi kredensial
+
+20-11-2026T23:26:51 - [TEST_STEP][PASSED] - I open the CURA application: I open the CURA application
+
+20-11-2026T23:26:52 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+20-11-2026T23:26:52 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+20-11-2026T23:26:55 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+20-11-2026T23:26:58 - [MESSAGE][PASSED] - Navigate to 'https://katalon-demo-cura.herokuapp.com/' successfully
+
+20-11-2026T23:26:58 - [MESSAGE][PASSED] - Wait for page load successfully
+
+20-11-2026T23:26:58 - [MESSAGE][PASSED] - I open the CURA application
+
+20-11-2026T23:26:58 - [TEST_STEP][PASSED] - I open the login form: I open the login form
+
+20-11-2026T23:26:59 - [MESSAGE][PASSED] - Object: 'Object Repository/CURA/a_Make Appointment' is clicked on
+
+20-11-2026T23:26:59 - [MESSAGE][PASSED] - Wait for page load successfully
+
+20-11-2026T23:26:59 - [MESSAGE][PASSED] - I open the login form
+
+20-11-2026T23:26:59 - [TEST_STEP][PASSED] - I enter username "John Doe" and password "ThisIsNotAPassword": I enter username "John Doe" and password "ThisIsNotAPassword"
+
+20-11-2026T23:27:09 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/input_userName' was broken. Propose an alternative one: '//input[@id='txt-username']'.
+
+20-11-2026T23:27:09 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:27:19 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/input_userName' was broken. Propose an alternative one: '//input[@id='txt-username']'.
+
+20-11-2026T23:27:19 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:27:19 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/CURA/input_userName'
+
+20-11-2026T23:27:30 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/input_password' was broken. Propose an alternative one: '//input[@id='txt-password']'.
+
+20-11-2026T23:27:30 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:27:41 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/input_password' was broken. Propose an alternative one: '//input[@id='txt-password']'.
+
+20-11-2026T23:27:41 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:27:42 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/CURA/input_password'
+
+20-11-2026T23:27:42 - [MESSAGE][PASSED] - I enter username "John Doe" and password "ThisIsNotAPassword"
+
+20-11-2026T23:27:42 - [TEST_STEP][PASSED] - I submit login: I submit login
+
+20-11-2026T23:27:52 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/button_Login' was broken. Propose an alternative one: '//button[@id='btn-login']'.
+
+20-11-2026T23:27:52 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:27:55 - [MESSAGE][PASSED] - Object: 'Object Repository/CURA/button_Login' is clicked on
+
+20-11-2026T23:27:55 - [MESSAGE][PASSED] - Wait for page load successfully
+
+20-11-2026T23:27:55 - [MESSAGE][PASSED] - I submit login
+
+20-11-2026T23:27:55 - [TEST_STEP][PASSED] - the login result should be "SUCCESS": the login result should be "SUCCESS"
+
+20-11-2026T23:27:55 - [MESSAGE][PASSED] - Text 'Make Appointment' is present on page 
+
+20-11-2026T23:27:59 - [MESSAGE][PASSED] - Browser is closed
+
+20-11-2026T23:27:59 - [MESSAGE][PASSED] - the login result should be "SUCCESS"
+
+20-11-2026T23:27:59 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Memeriksa login dengan berbagai kombinasi kredensial: SCENARIO Memeriksa login dengan berbagai kombinasi kredensial
+
+20-11-2026T23:27:59 - [TEST_STEP][PASSED] - I open the CURA application: I open the CURA application
+
+20-11-2026T23:27:59 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+20-11-2026T23:27:59 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+20-11-2026T23:28:01 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+20-11-2026T23:28:04 - [MESSAGE][PASSED] - Navigate to 'https://katalon-demo-cura.herokuapp.com/' successfully
+
+20-11-2026T23:28:04 - [MESSAGE][PASSED] - Wait for page load successfully
+
+20-11-2026T23:28:04 - [MESSAGE][PASSED] - I open the CURA application
+
+20-11-2026T23:28:04 - [TEST_STEP][PASSED] - I open the login form: I open the login form
+
+20-11-2026T23:28:05 - [MESSAGE][PASSED] - Object: 'Object Repository/CURA/a_Make Appointment' is clicked on
+
+20-11-2026T23:28:05 - [MESSAGE][PASSED] - Wait for page load successfully
+
+20-11-2026T23:28:05 - [MESSAGE][PASSED] - I open the login form
+
+20-11-2026T23:28:05 - [TEST_STEP][PASSED] - I enter username "Jane Doe" and password "ThisIsNotAPassword": I enter username "Jane Doe" and password "ThisIsNotAPassword"
+
+20-11-2026T23:28:15 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/input_userName' was broken. Propose an alternative one: '//input[@id='txt-username']'.
+
+20-11-2026T23:28:15 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:28:25 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/input_userName' was broken. Propose an alternative one: '//input[@id='txt-username']'.
+
+20-11-2026T23:28:25 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:28:25 - [MESSAGE][PASSED] - Text 'Jane Doe' is set on object 'Object Repository/CURA/input_userName'
+
+20-11-2026T23:28:35 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/input_password' was broken. Propose an alternative one: '//input[@id='txt-password']'.
+
+20-11-2026T23:28:35 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:28:45 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/input_password' was broken. Propose an alternative one: '//input[@id='txt-password']'.
+
+20-11-2026T23:28:45 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:28:45 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/CURA/input_password'
+
+20-11-2026T23:28:45 - [MESSAGE][PASSED] - I enter username "Jane Doe" and password "ThisIsNotAPassword"
+
+20-11-2026T23:28:45 - [TEST_STEP][PASSED] - I submit login: I submit login
+
+20-11-2026T23:28:55 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/button_Login' was broken. Propose an alternative one: '//button[@id='btn-login']'.
+
+20-11-2026T23:28:55 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:28:56 - [MESSAGE][PASSED] - Object: 'Object Repository/CURA/button_Login' is clicked on
+
+20-11-2026T23:28:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+20-11-2026T23:28:56 - [MESSAGE][PASSED] - I submit login
+
+20-11-2026T23:28:56 - [TEST_STEP][PASSED] - the login result should be "FAILURE": the login result should be "FAILURE"
+
+20-11-2026T23:28:57 - [MESSAGE][PASSED] - Text 'Login failed! Please ensure the username and password are valid.' is present on page 
+
+20-11-2026T23:28:58 - [MESSAGE][PASSED] - Browser is closed
+
+20-11-2026T23:28:58 - [MESSAGE][PASSED] - the login result should be "FAILURE"
+
+20-11-2026T23:28:58 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Memeriksa login dengan berbagai kombinasi kredensial: SCENARIO Memeriksa login dengan berbagai kombinasi kredensial
+
+20-11-2026T23:28:58 - [TEST_STEP][PASSED] - I open the CURA application: I open the CURA application
+
+20-11-2026T23:28:58 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+20-11-2026T23:28:58 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+20-11-2026T23:29:00 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+20-11-2026T23:29:03 - [MESSAGE][PASSED] - Navigate to 'https://katalon-demo-cura.herokuapp.com/' successfully
+
+20-11-2026T23:29:03 - [MESSAGE][PASSED] - Wait for page load successfully
+
+20-11-2026T23:29:03 - [MESSAGE][PASSED] - I open the CURA application
+
+20-11-2026T23:29:03 - [TEST_STEP][PASSED] - I open the login form: I open the login form
+
+20-11-2026T23:29:04 - [MESSAGE][PASSED] - Object: 'Object Repository/CURA/a_Make Appointment' is clicked on
+
+20-11-2026T23:29:04 - [MESSAGE][PASSED] - Wait for page load successfully
+
+20-11-2026T23:29:04 - [MESSAGE][PASSED] - I open the login form
+
+20-11-2026T23:29:04 - [TEST_STEP][PASSED] - I enter username "John Doe" and password "WrongPassword123": I enter username "John Doe" and password "WrongPassword123"
+
+20-11-2026T23:29:14 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/input_userName' was broken. Propose an alternative one: '//input[@id='txt-username']'.
+
+20-11-2026T23:29:14 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:29:24 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/input_userName' was broken. Propose an alternative one: '//input[@id='txt-username']'.
+
+20-11-2026T23:29:24 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:29:24 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/CURA/input_userName'
+
+20-11-2026T23:29:34 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/input_password' was broken. Propose an alternative one: '//input[@id='txt-password']'.
+
+20-11-2026T23:29:34 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:29:44 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/input_password' was broken. Propose an alternative one: '//input[@id='txt-password']'.
+
+20-11-2026T23:29:44 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:29:44 - [MESSAGE][PASSED] - Text 'WrongPassword123' is set on object 'Object Repository/CURA/input_password'
+
+20-11-2026T23:29:44 - [MESSAGE][PASSED] - I enter username "John Doe" and password "WrongPassword123"
+
+20-11-2026T23:29:44 - [TEST_STEP][PASSED] - I submit login: I submit login
+
+20-11-2026T23:29:54 - [MESSAGE][WARNING] - The current locator of test object 'Object Repository/CURA/button_Login' was broken. Propose an alternative one: '//button[@id='btn-login']'.
+
+20-11-2026T23:29:54 - [MESSAGE][WARNING] - Waiting for element timed out
+
+20-11-2026T23:29:55 - [MESSAGE][PASSED] - Object: 'Object Repository/CURA/button_Login' is clicked on
+
+20-11-2026T23:29:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+20-11-2026T23:29:56 - [MESSAGE][PASSED] - I submit login
+
+20-11-2026T23:29:56 - [TEST_STEP][PASSED] - the login result should be "FAILURE": the login result should be "FAILURE"
+
+20-11-2026T23:29:56 - [MESSAGE][PASSED] - Text 'Login failed! Please ensure the username and password are valid.' is present on page 
+
+20-11-2026T23:29:58 - [MESSAGE][PASSED] - Browser is closed
+
+20-11-2026T23:29:58 - [MESSAGE][PASSED] - the login result should be "FAILURE"
+
+20-11-2026T23:29:58 - [MESSAGE][PASSED] - Feature file: 'Include/features/Login.feature' was passed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[20-11-2026T23:26:49 - [TEST_SUITE][PASSED] - TS_BDD_Login: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

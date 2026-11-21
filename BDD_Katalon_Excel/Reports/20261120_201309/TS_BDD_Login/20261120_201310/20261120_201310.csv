@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_BDD_Login,,,,20-11-2026 20:13:57,20-11-2026 20:13:59,2.011s,PASSED
+,,,,,,,
+Test Cases/TC_BDD_Login,,,,20-11-2026 20:13:58,20-11-2026 20:13:59,1.210s,PASSED
+return null,,,,20-11-2026 20:13:59,20-11-2026 20:13:59,0.006s,PASSED

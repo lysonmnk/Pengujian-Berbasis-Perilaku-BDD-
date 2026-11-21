@@ -1,0 +1,69 @@
+[0.019s][warning][cds] Archived non-system classes are disabled because the java.system.class.loader property is specified (value = "groovy.lang.GroovyClassLoader"). To use archived non-system classes, this property must not be set
+2026-11-20 20:13:54.126 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\lyson\.katalon\packages\KS-11.7.0\configuration\org.eclipse.osgi\166\0\.cp\resources\logback\logback-execution.xml
+2026-11-20 20:13:54.138 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\lyson\Katalon Studio\BDD_Katalon_Excel\Include\config\log.properties
+2026-11-20 20:13:57.087 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS_BDD_Login
+2026-11-20 20:13:57.480 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Lysonmanik
+2026-11-20 20:13:57.484 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = BDD_Katalon_Excel
+2026-11-20 20:13:57.486 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = lyson - 172.25.41.177
+2026-11-20 20:13:57.488 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-11-20 20:13:57.489 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 172.25.41.177
+2026-11-20 20:13:57.490 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.7.0
+2026-11-20 20:13:58.023 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-11-20 20:13:58.024 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC_BDD_Login
+2026-11-20 20:13:59.063 WARN  c.k.k.c.u.internal.IntentionGroupSyntax  - Groovy AST scan failed, falling back to manual scanning
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 21
+	at java.base/java.util.Arrays$ArrayList.get(Arrays.java:4266)
+	at com.kms.katalon.core.util.internal.IntentionGroupSyntax.scanLinesForJavadocMarkers(IntentionGroupSyntax.java:309)
+	at com.kms.katalon.core.util.internal.IntentionGroupSyntax.scanUsingGroovyAST(IntentionGroupSyntax.java:297)
+	at com.kms.katalon.core.util.internal.IntentionGroupSyntax.scanSourceText(IntentionGroupSyntax.java:95)
+	at com.kms.katalon.core.ast.AstTestStepTransformation.buildJavadocIntentionTokenMap(AstTestStepTransformation.groovy:80)
+	at com.kms.katalon.core.ast.AstTestStepTransformation.visit(AstTestStepTransformation.groovy:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSite.invoke(PogoMetaMethodSite.java:166)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:69)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at org.codehaus.groovy.control.customizers.ASTTransformationCustomizer.call(ASTTransformationCustomizer.groovy:301)
+	at org.codehaus.groovy.control.CompilationUnit$IPrimaryClassNodeOperation.doPhaseOperation(CompilationUnit.java:943)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:672)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:636)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:392)
+	at groovy.lang.GroovyClassLoader.lambda$parseClass$3(GroovyClassLoader.java:335)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:333)
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:208)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:533)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:524)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:503)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:359)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:188)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:115)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:241)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)
+	at S1120_0.run(S1120_0.groovy:41)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:254)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:360)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:349)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:652)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:398)
+	at groovy.ui.GroovyMain.access$1400(GroovyMain.java:68)
+	at groovy.ui.GroovyMain$GroovyCommand.process(GroovyMain.java:322)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:142)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:115)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:117)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:39)
+2026-11-20 20:13:59.218 DEBUG testcase.TC_BDD_Login                    - 1: return null
+2026-11-20 20:13:59.234 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC_BDD_Login
+2026-11-20 20:13:59.420 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-11-20 20:13:59.421 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS_BDD_Login
+2026-11-20 20:13:59.421 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
